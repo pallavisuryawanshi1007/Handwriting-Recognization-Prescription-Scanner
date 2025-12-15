@@ -1,0 +1,21 @@
+result_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detected Medicines</title>
+</head>
+<body>
+    <h2>Extracted Text</h2>
+    <p>{{ extracted_words }}</p>
+    <h2>Detected Medicines</h2>
+    <ul>
+        {% for medicine in medicines %}
+            <li>{{ medicine }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
+"""
